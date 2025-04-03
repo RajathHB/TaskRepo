@@ -6,14 +6,15 @@ public class Learn054 {
 
 	public static void main(String[] args) {
 		
-		
-		  int i = 0;
+	    Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your number");
+        int n = sc.nextInt();
+	
+        int i = 0;
 	        int flag = 0;
-	        int m = 0;
+	        int m = 0; 
 
-	        Scanner sc = new Scanner(System.in);
-	        System.out.println("Enter your number");
-	        int n = sc.nextInt();
+	    
 
 //	        17 -> 2 to 17/2 -> num%i == 0 -> not a prime
 	//
@@ -26,15 +27,20 @@ public class Learn054 {
 	                    System.out.println("Not a prime number");
 	                    flag = 1;
 	                    break;
+	            
 	                }
+	    	        sc.close();
+
 	            }
+	            
 	        }
 
 	        if(flag ==0 ){
 	            System.out.println("Prime Number" + n);
 	        }
-	        sc.close();
+	      
 
-	}
-
+}
+	
+	
 }
