@@ -10,9 +10,9 @@ public class Learn055_Palindrom {
 		System.out.println("Enter a String");
 		String user_input = sc.next();
 		
-		boolean result = isPalindrome(user_input);
+	//	boolean result = isPalindrome(user_input);
 		
-		if(result) {
+		if(isPalindrome(user_input)) {
 			System.out.println("Palindrome");
 		}
 		else {
@@ -25,8 +25,7 @@ public class Learn055_Palindrom {
 		
 	}
 
-	/* private static boolean isPalindrome(String user_input) {
-		return false; */
+
 	
 	static boolean isPalindrome(String userInput) {
 		 String original_str = userInput; 
